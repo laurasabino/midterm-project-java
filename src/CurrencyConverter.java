@@ -8,7 +8,7 @@ public class CurrencyConverter {
 
         do {
 
-            Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);            
             System.out.println("Hello!" +
                     " This is my currency converter" +
                     " Please, choose one of the options");
@@ -20,10 +20,12 @@ public class CurrencyConverter {
             System.out.println("3. BRL to CAD");
             System.out.println("4. CAD to BRL");
 
-            // Adding the cases related to the options
+            // Adding the cases
 
             int exchange = sc.nextInt();
             switch (exchange) {
+                    
+                    // USD to CAD
                 case 1 -> {
                     System.out.println("Enter the amount in USD:");
                     double usd = sc.nextDouble();
@@ -36,18 +38,20 @@ public class CurrencyConverter {
                     }
 
                 }
+                    // CAD to USD
                 case 2 -> {
                     System.out.println("Enter the amount in CAD:");
                     double cad = sc.nextDouble();
                     if (cad >= 0) {
-                        System.out.println(cad + "CAD if equal to " + cad / 1.26 + " USD. ");
+                        System.out.println(cad + " CAD if equal to " + cad / 1.26 + " USD. ");
 
                     } else {
                         System.out.println("The amount need to me in POSITIVE numbers, try it again :)");
                     }
 
                 }
-
+                    
+                    // BRL to CAD
                 case 3 -> {
                     System.out.println("Enter the amount in BRL:");
                     double brl = sc.nextDouble();
@@ -58,6 +62,7 @@ public class CurrencyConverter {
                         System.out.println("The amount need to me in POSITIVE numbers, try it again :)");
                     }
                 }
+                    // CAD to BRL
                 case 4 -> {
                     System.out.println("Enter the amount in CAD:");
                     double cad = sc.nextDouble();
@@ -81,6 +86,6 @@ public class CurrencyConverter {
 
         //Exit message
 
-        System.out.println("Thank you for using my currency converter! Took me kinda long to get it done :)");
+        System.out.println("Thank you for using my currency converter! :)");
     }
 }
