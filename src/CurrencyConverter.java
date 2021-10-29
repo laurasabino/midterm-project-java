@@ -3,12 +3,15 @@ import java.util.Scanner;
 public class CurrencyConverter {
 
     public static void main(String[] args) {
+        
+// First of all, thank you Francois for being so patience with me :)
 
         boolean running = true;
 
         do {
 
-            Scanner sc = new Scanner(System.in);            
+            Scanner sc = new Scanner(System.in);    
+            System.out.println(" - ")
             System.out.println("Hello!" +
                     " This is my currency converter" +
                     " Please, choose one of the options");
@@ -74,7 +77,8 @@ public class CurrencyConverter {
                     }
                 }
             }
-
+            
+            System.out.println(" - ")
             System.out.println("Do you want make another conversion?");
             System.out.println("1. Yes \t\t\t 2. Any other key: No.");
             if(sc.nextInt() !=1){
