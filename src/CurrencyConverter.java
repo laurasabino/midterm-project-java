@@ -67,7 +67,7 @@ public class CurrencyConverter {
                     System.out.println("Enter the amount in CAD:");
                     double cad = sc.nextDouble();
                     if (cad >= 0) {
-                        System.out.println(cad + " CAD if equal to" + cad / 0.22 + "BRL. ");
+                        System.out.println(cad + " CAD if equal to " + cad / 0.22 + " BRL. ");
 
                     } else {
                         System.out.println("The amount need to me in POSITIVE numbers, try it again :)");
